@@ -1,0 +1,4 @@
+del setup_minimal.wixobj
+del setup_minimal.msi
+c:\sift\utilities\installer\wix\candle.exe -ext "Microsoft.Tools.WindowsInstallerXml.Extensions.NetFxCompiler, WixNetFxExtension" setup_minimal.wxs
+c:\sift\utilities\installer\wix\light.exe -ext "Microsoft.Tools.WindowsInstallerXml.Extensions.NetFxCompiler, WixNetFxExtension" C:\sift\utilities\installer\wix\netfx.wixlib -out setup_minimal.msi setup_minimal.wixobj C:\sift\utilities\installer\wix\wixui.wixlib -loc C:\sift\utilities\installer\wix\WixUI_en-us.wxl C:\sift\utilities\installer\wix\DIFxApp.wixlib c:\sift\utilities\installer\wix\wixca.wixlib

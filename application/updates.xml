@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<updates>
+	<update version="0.1.0.0" priority="high" date="10/10/2007">
+		<description>
+			<![CDATA[The first beta release of SIFT.]]>
+		</description>		
+	</update>
+	<update version="0.1.0.1" priority="low" date="10/28/2007">
+		<description>
+			<![CDATA[A new version of SIFT is available.
+Please go to http://sift.sourceforge.net/ to get it.]]>
+		</description>
+		<changes>
+			<change>
+				<![CDATA[Added update notification capability.]]>
+			</change>
+		</changes>
+	</update>
+</updates>

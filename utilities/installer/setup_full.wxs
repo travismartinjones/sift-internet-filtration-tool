@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2003/01/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">	
+	<Product Name='Sift' Id='29205068-3930-4ec9-93cc-5ac75f7076fa'
+			 Language='1033' Codepage='1252' Version='0.1.0.0' Manufacturer='Travis Jones'>
+		<Package Id='6e794632-041e-4127-b546-3f454519b598'
+				 Keywords='Installer'
+				 Description='Sift 0.1.0 Installer'
+				 Comments='View the license information for terms of agreement.'
+				 InstallerVersion='200'
+				 Languages='1033'
+				 Compressed='yes'
+				 SummaryCodepage='1252'/>
+
+		<Media Id='1' Cabinet='app.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
+		<Property Id='DiskPrompt' Value="Sift 0.1.0 Installation [1]" />
+
+		<Directory Id='TARGETDIR' Name='SourceDir'>
+			<Directory Id='ProgramFilesFolder' Name='PFiles'>
+				<Directory Id='INSTALLDIR' Name='Sift' >
+					<Directory Id='DRIVERINSTALLDIR' Name='driver' LongName='Driver'>
+						<Component Id='SiftDriver' Guid='0302854e-1c51-41a7-aea2-33a455d5d933'>
+							<File Id='SiftDriverInstaller' Name='siftinst.exe'
+							 DiskId='1' src='C:\sift\driverinstaller\Apps\IMConfig\Release\IMConfig.exe' Vital='yes' />
+							<File Id='SiftDriverSys' Name='sift.sys'
+							 DiskId='1' src='C:\sift\driver\objchk_wxp_x86\i386\sift.sys' Vital='yes' />
+							<File Id='SiftDriverInf' Name='netsf.inf'
+							 DiskId='1' src='C:\sift\driver\netsf.inf' Vital='yes' />
+							<File Id='SiftDriverMInf' Name='netsf_m.inf'
+							 DiskId='1' src='C:\sift\driver\netsf_m.inf' Vital='yes' />
+						</Component>
+					</Directory>
+					<Directory Id='SIFTLISTSDIR' Name='lists' LongName='Lists'>
+						<Component Id='SiftLists' Guid='cab3fe59-0a58-458f-b7f3-302d8f0a2535'>
+							<File Id='AdvertisementURLList' Name='advurl.lis' LongName='64d1a547-2ac1-4590-bc5a-63ea46b64c59.lis'
+							 DiskId='1' Source='C:\sift\lists\64d1a547-2ac1-4590-bc5a-63ea46b64c59.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AdvertisementIPList' Name='advip.lis' LongName='9b9f95ad-35b9-4fcb-a322-22868bd22087.lis'
+							 DiskId='1' Source='C:\sift\lists\9b9f95ad-35b9-4fcb-a322-22868bd22087.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AdvertisementDomainList' Name='advdom.lis' LongName='20d7ba1e-62d9-41f3-b4b1-dbb791c6855c.lis'
+							 DiskId='1' Source='C:\sift\lists\20d7ba1e-62d9-41f3-b4b1-dbb791c6855c.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AdultURLList' Name='adulturl.lis' LongName='2fd77a85-d591-4477-b4e5-fe8348f4f4bf.lis'
+							 DiskId='1' Source='C:\sift\lists\2fd77a85-d591-4477-b4e5-fe8348f4f4bf.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AdultIPList' Name='adultip.lis' LongName='3a78642e-57e1-410c-9388-7f68b9f21eae.lis'
+							 DiskId='1' Source='C:\sift\lists\3a78642e-57e1-410c-9388-7f68b9f21eae.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AdultDomainList' Name='adultdom.lis' LongName='c872facb-514b-4bf7-89f1-719baa5a7fbc.lis'
+							 DiskId='1' Source='C:\sift\lists\c872facb-514b-4bf7-89f1-719baa5a7fbc.lis'
+							 Compressed='yes' Vital='no' />
+							 
+							<File Id='AggressiveURLList' Name='aggrurl.lis' LongName='dc34751a-2fe1-495c-b7a1-389b09461c07.lis'
+							 DiskId='1' Source='C:\sift\lists\dc34751a-2fe1-495c-b7a1-389b09461c07.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AggressiveIPList' Name='aggrip.lis' LongName='df2589f2-74bc-4fb4-806b-f93ca48ed3af.lis'
+							 DiskId='1' Source='C:\sift\lists\df2589f2-74bc-4fb4-806b-f93ca48ed3af.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AggressiveDomainList' Name='aggrdom.lis' LongName='09710727-c336-467c-8f91-28cd5b377da5.lis'
+							 DiskId='1' Source='C:\sift\lists\09710727-c336-467c-8f91-28cd5b377da5.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='ArtNudesURLList' Name='artnurl.lis' LongName='2c18f273-5aba-4708-8e03-a933df5a78a5.lis'
+							 DiskId='1' Source='C:\sift\lists\2c18f273-5aba-4708-8e03-a933df5a78a5.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='ArtNudesDomainList' Name='artndom.lis' LongName='d2ea2755-5f19-42a5-8069-c1d5f722112b.lis'
+							 DiskId='1' Source='C:\sift\lists\d2ea2755-5f19-42a5-8069-c1d5f722112b.lis'
+							 Compressed='yes' Vital='no' />
+							 
+							<File Id='ChatURLList' Name='chaturl.lis' LongName='186e52b1-1719-4f9e-b5b2-4645c77ff39e.lis'
+							 DiskId='1' Source='C:\sift\lists\186e52b1-1719-4f9e-b5b2-4645c77ff39e.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='ChatIPList' Name='chatip.lis' LongName='e329b881-6af0-43b8-8664-6d1bf0494cdb.lis'
+							 DiskId='1' Source='C:\sift\lists\e329b881-6af0-43b8-8664-6d1bf0494cdb.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='ChatDomainList' Name='chatdom.lis' LongName='e9afee95-d3ec-4554-bf05-6a83712e4211.lis'
+							 DiskId='1' Source='C:\sift\lists\e9afee95-d3ec-4554-bf05-6a83712e4211.lis'
+							 Compressed='yes' Vital='no' />					
+
+							<File Id='DatingURLList' Name='dateurl.lis' LongName='001f8b2f-e1e8-48ff-9f2f-9792fa0c7d3a.lis'
+							 DiskId='1' Source='C:\sift\lists\001f8b2f-e1e8-48ff-9f2f-9792fa0c7d3a.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='DatingDomainList' Name='datedom.lis' LongName='860a3f74-5e6e-46f7-bae5-79a7b24f48bc.lis'
+							 DiskId='1' Source='C:\sift\lists\860a3f74-5e6e-46f7-bae5-79a7b24f48bc.lis'
+							 Compressed='yes' Vital='no' />	
+							 
+							<File Id='DrugsURLList' Name='drugurl.lis' LongName='a2841b68-7f3a-49f6-abfe-676728625090.lis'
+							 DiskId='1' Source='C:\sift\lists\a2841b68-7f3a-49f6-abfe-676728625090.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='DrugsIPList' Name='drugip.lis' LongName='6eab104c-19d5-4960-845e-cbbdedfb435c.lis'
+							 DiskId='1' Source='C:\sift\lists\6eab104c-19d5-4960-845e-cbbdedfb435c.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='DrugsDomainList' Name='drugdom.lis' LongName='6f18e4cd-9384-4b92-9ed5-89c62be0e7c0.lis'
+							 DiskId='1' Source='C:\sift\lists\6f18e4cd-9384-4b92-9ed5-89c62be0e7c0.lis'
+							 Compressed='yes' Vital='no' />		
+							 
+							<File Id='GamblingURLList' Name='gamblurl.lis' LongName='b8cb56e4-72fc-4b9e-be66-7dfbbe081044.lis'
+							 DiskId='1' Source='C:\sift\lists\b8cb56e4-72fc-4b9e-be66-7dfbbe081044.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='GamblingIPList' Name='gamblip.lis' LongName='8d7d9d22-02d7-48ad-8c25-7428afdacdaa.lis'
+							 DiskId='1' Source='C:\sift\lists\8d7d9d22-02d7-48ad-8c25-7428afdacdaa.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='GamblingDomainList' Name='gambldom.lis' LongName='bab05308-54ec-4cea-938d-fbe76d5e6ee4.lis'
+							 DiskId='1' Source='C:\sift\lists\bab05308-54ec-4cea-938d-fbe76d5e6ee4.lis'
+							 Compressed='yes' Vital='no' />
+							 
+							<File Id='HackingURLList' Name='hackurl.lis' LongName='abcab839-33f5-4043-8c4f-31aaac9b80f6.lis'
+							 DiskId='1' Source='C:\sift\lists\abcab839-33f5-4043-8c4f-31aaac9b80f6.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='HackingIPList' Name='hackip.lis' LongName='aedd8e16-ef60-4338-8ee5-3ab41a9e8110.lis'
+							 DiskId='1' Source='C:\sift\lists\aedd8e16-ef60-4338-8ee5-3ab41a9e8110.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='HackingDomainList' Name='hackdom.lis' LongName='d95ad330-3175-4086-82b7-a00ab25f328a.lis'
+							 DiskId='1' Source='C:\sift\lists\d95ad330-3175-4086-82b7-a00ab25f328a.lis'
+							 Compressed='yes' Vital='no' /
+							 
+							<File Id='InternetRadioURLList' Name='iradurl.lis' LongName='349c5b54-d6ed-4df4-8dd6-0801009dc730.lis'
+							 DiskId='1' Source='C:\sift\lists\349c5b54-d6ed-4df4-8dd6-0801009dc730.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='InternetRadioIPList' Name='iradip.lis' LongName='ee7cc097-4601-49b6-9030-2b2e078dadaf.lis'
+							 DiskId='1' Source='C:\sift\lists\ee7cc097-4601-49b6-9030-2b2e078dadaf.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='InternetRadioDomainList' Name='iraddom.lis' LongName='9a437706-e81e-4c9e-af7c-981b10b2ce3a.lis'
+							 DiskId='1' Source='C:\sift\lists\9a437706-e81e-4c9e-af7c-981b10b2ce3a.lis'
+							 Compressed='yes' Vital='no' /> 
+							 
+							<File Id='JobSearchURLList' Name='joburl.lis' LongName='89382d36-3a14-4d3d-bf05-7d6005f9cb50.lis'
+							 DiskId='1' Source='C:\sift\lists\89382d36-3a14-4d3d-bf05-7d6005f9cb50.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='JobSearchDomainList' Name='jobdom.lis' LongName='75d3bf10-4e69-4fa8-8cfe-5b83a4a2959d.lis'
+							 DiskId='1' Source='C:\sift\lists\75d3bf10-4e69-4fa8-8cfe-5b83a4a2959d.lis'
+							 Compressed='yes' Vital='no' /
+							 
+							<File Id='KidTimeWasteURLList' Name='kidwurl.lis' LongName='8ecf3e60-6b2a-4e40-baa9-cc6d6b8cb399.lis'
+							 DiskId='1' Source='C:\sift\lists\8ecf3e60-6b2a-4e40-baa9-cc6d6b8cb399.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='KidTimeWasteDomainList' Name='kidwdom.lis' LongName='9c94f0e7-6cf7-4f87-a27c-aac519d41085.lis'
+							 DiskId='1' Source='C:\sift\lists\9c94f0e7-6cf7-4f87-a27c-aac519d41085.lis'
+							 Compressed='yes' Vital='no' /
+							 
+							<File Id='PornographyURLList' Name='pornurl.lis' LongName='29f37e30-e522-4b03-834b-b5be1de468b0.lis'
+							 DiskId='1' Source='C:\sift\lists\29f37e30-e522-4b03-834b-b5be1de468b0.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='PornographyIPList' Name='pornip.lis' LongName='513f2606-9dd2-45f8-924d-88d4d2f39057.lis'
+							 DiskId='1' Source='C:\sift\lists\513f2606-9dd2-45f8-924d-88d4d2f39057.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='PornographyDomainList' Name='porndom.lis' LongName='fe320781-63fe-42e8-be9f-592cf1af7e2c.lis'
+							 DiskId='1' Source='C:\sift\lists\fe320781-63fe-42e8-be9f-592cf1af7e2c.lis'
+							 Compressed='yes' Vital='no' />		
+
+							<File Id='MultimediaURLList' Name='mmurl.lis' LongName='f02694df-71e3-4af8-a272-ed0d84019a75.lis'
+							 DiskId='1' Source='C:\sift\lists\f02694df-71e3-4af8-a272-ed0d84019a75.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='MultimediaIPList' Name='mmip.lis' LongName='1085c6a3-72ea-4f1d-87ea-4504a6b2238f.lis'
+							 DiskId='1' Source='C:\sift\lists\1085c6a3-72ea-4f1d-87ea-4504a6b2238f.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='MultimediaDomainList' Name='mmdom.lis' LongName='45e9dd43-d397-4e25-a018-fd265dd01088.lis'
+							 DiskId='1' Source='C:\sift\lists\45e9dd43-d397-4e25-a018-fd265dd01088.lis'
+							 Compressed='yes' Vital='no' />			
+
+							<File Id='NewsURLList' Name='newsurl.lis' LongName='13890e17-fdef-4bef-832e-436081e7f790.lis'
+							 DiskId='1' Source='C:\sift\lists\13890e17-fdef-4bef-832e-436081e7f790.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='NewsDomainList' Name='newsdom.lis' LongName='81736668-f371-464a-8735-9ed5e5b57ce9.lis'
+							 DiskId='1' Source='C:\sift\lists\81736668-f371-464a-8735-9ed5e5b57ce9.lis'
+							 Compressed='yes' Vital='no' />	
+							 
+							<File Id='NudistURLList' Name='nudeurl.lis' LongName='28b2f20b-2899-48a5-862b-ee8316ca1bbc.lis'
+							 DiskId='1' Source='C:\sift\lists\28b2f20b-2899-48a5-862b-ee8316ca1bbc.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='NudistDomainList' Name='nudedom.lis' LongName='22241d0d-3535-46d0-8e8a-d7d777aacff5.lis'
+							 DiskId='1' Source='C:\sift\lists\22241d0d-3535-46d0-8e8a-d7d777aacff5.lis'
+							 Compressed='yes' Vital='no' />		
+							 
+							<File Id='OnlineGamesURLList' Name='ogameurl.lis' LongName='e9018808-17e5-4014-8d1a-87cd1e9cfabc.lis'
+							 DiskId='1' Source='C:\sift\lists\e9018808-17e5-4014-8d1a-87cd1e9cfabc.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='OnlineGamesIPList' Name='ogameip.lis' LongName='553d868d-bed9-4bca-bed0-79bb984bdde1.lis'
+							 DiskId='1' Source='C:\sift\lists\553d868d-bed9-4bca-bed0-79bb984bdde1.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='OnlineGamesDomainList' Name='ogamedom.lis' LongName='c9c15e1b-0575-4aa7-9654-fc25a4945121.lis'
+							 DiskId='1' Source='C:\sift\lists\c9c15e1b-0575-4aa7-9654-fc25a4945121.lis'
+							 Compressed='yes' Vital='no' />	 
+							 
+							<File Id='PhishingIPList' Name='phishurl.lis' LongName='fed32f7d-9e40-48d1-910f-65b859c5bd30.lis'
+							 DiskId='1' Source='C:\sift\lists\fed32f7d-9e40-48d1-910f-65b859c5bd30.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='PhishingDomainList' Name='phishdom.lis' LongName='685eef75-bbf8-4a23-adbd-d9d9294f77b4.lis'
+							 DiskId='1' Source='C:\sift\lists\685eef75-bbf8-4a23-adbd-d9d9294f77b4.lis'
+							 Compressed='yes' Vital='no' />		 
+							 
+							<File Id='ProxyURLList' Name='proxyurl.lis' LongName='e9018808-17e5-4014-8d1a-87cd1e9cfabc.lis'
+							 DiskId='1' Source='C:\sift\lists\e9018808-17e5-4014-8d1a-87cd1e9cfabc.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='ProxyIPList' Name='proxyip.lis' LongName='553d868d-bed9-4bca-bed0-79bb984bdde1.lis'
+							 DiskId='1' Source='C:\sift\lists\553d868d-bed9-4bca-bed0-79bb984bdde1.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='ProxyDomainList' Name='proxydom.lis' LongName='c9c15e1b-0575-4aa7-9654-fc25a4945121.lis'
+							 DiskId='1' Source='C:\sift\lists\c9c15e1b-0575-4aa7-9654-fc25a4945121.lis'
+							 Compressed='yes' Vital='no' />	 
+							 
+							<File Id='SearchEnginesDomainList' Name='searchdom.lis' LongName='0503d71c-b63c-4360-9fa6-83e7534d5fcb.lis'
+							 DiskId='1' Source='C:\sift\lists\0503d71c-b63c-4360-9fa6-83e7534d5fcb.lis'
+							 Compressed='yes' Vital='no' />	 
+							 
+							<File Id='SportsNewsURLList' Name='snewsurl.lis' LongName='ff305b11-df0d-4ee7-adff-915db3de6dc0.lis'
+							 DiskId='1' Source='C:\sift\lists\ff305b11-df0d-4ee7-adff-915db3de6dc0.lis'
+							 Compressed='yes' Vital='no' />							
+
+							<File Id='SportsNewsDomainList' Name='snewsdom.lis' LongName='fffc016c-1e11-495d-a46e-a6f457632d8b.lis'
+							 DiskId='1' Source='C:\sift\lists\fffc016c-1e11-495d-a46e-a6f457632d8b.lis'
+							 Compressed='yes' Vital='no' />	 
+
+							<File Id='SportsURLList' Name='sporturl.lis' LongName='cc7760ab-1033-4bbb-ad6c-b9cd4db958f6.lis'
+							 DiskId='1' Source='C:\sift\lists\cc7760ab-1033-4bbb-ad6c-b9cd4db958f6.lis'
+							 Compressed='yes' Vital='no' />							
+
+							<File Id='SportsDomainList' Name='sportdom.lis' LongName='89f2768d-c175-4c3e-bc84-4266603785e9.lis'
+							 DiskId='1' Source='C:\sift\lists\89f2768d-c175-4c3e-bc84-4266603785e9.lis'
+							 Compressed='yes' Vital='no' />	
+							 
+							<File Id='ViolenceURLList' Name='violurl.lis' LongName='d5cc6ba1-a831-4d44-affc-849d6a34c1f9'
+							 DiskId='1' Source='C:\sift\lists\d5cc6ba1-a831-4d44-affc-849d6a34c1f9.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='ViolenceIPList' Name='violip.lis' LongName='f8573547-e82c-4aab-9062-ba585de61b11.lis'
+							 DiskId='1' Source='C:\sift\lists\f8573547-e82c-4aab-9062-ba585de61b11.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='ViolenceDomainList' Name='violdom.lis' LongName='7820c8d3-3b23-4485-8ecd-98aa2932d09e.lis'
+							 DiskId='1' Source='C:\sift\lists\7820c8d3-3b23-4485-8ecd-98aa2932d09e.lis'
+							 Compressed='yes' Vital='no' />	
+							 
+							<File Id='WebmailURLList' Name='webmurl.lis' LongName='4b42273e-9ae2-4b3d-a40c-e63993d92928.lis'
+							 DiskId='1' Source='C:\sift\lists\4b42273e-9ae2-4b3d-a40c-e63993d92928.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='WebmailIPList' Name='webmip.lis' LongName='8128e54b-5d44-4715-bc08-07d17a5f3adb.lis'
+							 DiskId='1' Source='C:\sift\lists\8128e54b-5d44-4715-bc08-07d17a5f3adb.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='WebmailDomainList' Name='wmdom.lis' LongName='9a181ea9-2a26-4975-9d40-ca6ada0e34ab.lis'
+							 DiskId='1' Source='C:\sift\lists\9a181ea9-2a26-4975-9d40-ca6ada0e34ab.lis'
+							 Compressed='yes' Vital='no' />										 
+						</Component>
+					</Directory>
+					<Component Id='SiftAdmin' Guid='7d1b22e5-883d-4e56-a713-dd68f537606a'>
+						<File Id='SiftAdminFile' Name='Sift.exe'
+						 DiskId='1' src='C:\sift\application\bin\Release\Sift.exe'
+						 Vital='yes'>
+							<netfx:NativeImage Id="SiftAdminFileNgen" />
+							<Shortcut Id='SiftStartMenuLink' Directory='ProgramMenuDir' Name='Sift'/>
+						</File>
+						<File Id='SiftAdminConfigurationFile' Name='Sift.cfg' LongName='Sift.exe.config' 
+						 DiskId='1' src='C:\sift\application\bin\Release\Sift.exe.config'
+						 Vital='yes' />
+						<File Id='SiftLicenseFile' Name='license.txt'
+						 DiskId='1' src='c:\sift\utilities\installer\license.txt'
+						 Vital='yes' />
+						<Registry Id='SiftInstallDir' Root='HKLM' Key='Software\Sift' Name='InstallDir'
+						 Action='write' Type='string' Value='[INSTALLDIR]' />
+					</Component>
+					<Component Id='SiftService' Guid='5100a221-20e3-47db-89ea-8450a2db9065'
+						SharedDllRefCount='no' KeyPath='no' NeverOverwrite='no' Permanent='no' Transitive='no'
+						Win64='no' Location='either'>
+
+						<File Id='SiftConfigFile' Name='config.xml' LongName='SiftService.exe.config' 
+						 DiskId='1' src='C:\sift\service\bin\Release\SiftService.exe.config'
+						 Vital='yes' />
+
+						<File Id='SiftCommingFile' Name='resource.dll' LongName='Sift.Resources.dll' 
+						 DiskId='1' src='C:\sift\service\bin\Release\Sift.Resources.dll'
+						 Vital='yes' />
+
+						<File Id='SiftServiceFile' Name='SiftSvc.exe' LongName='SiftService.exe' 
+						 DiskId='1' Source='C:\sift\service\bin\Release\SiftService.exe'
+						 ReadOnly='no' Compressed='yes' KeyPath='yes' Vital='yes' Hidden='no' System='no'
+					 Checksum='no'>
+							<netfx:NativeImage Id="SiftServiceFileNgen" />
+						</File>
+
+						<ServiceInstall Id='SiftServiceInstall' DisplayName='Sift' Name='Sift'
+						 ErrorControl='normal' Start='auto' Type='ownProcess' Vital='yes' Interactive='no'>										
+							<ServiceConfig 
+								ServiceName='Sift' 
+								FirstFailureActionType='restart'
+								ResetPeriodInDays='0'
+								RestartServiceDelayInSeconds='60'
+								SecondFailureActionType='restart'
+								ThirdFailureActionType='restart' />							
+							<ServiceDependency Id='winmgmt' />
+						</ServiceInstall>
+
+						<ServiceControl Id='SiftServiceControl' Name='Sift'
+										 Start='install' Stop='uninstall' Remove='uninstall' Wait='no'/>
+												
+					</Component>					
+				</Directory>
+			</Directory>
+
+			<Directory Id='ProgramMenuFolder' Name='PMenu' LongName='Programs'>
+				<Directory Id='ProgramMenuDir' Name='Sift' />
+			</Directory>
+			<Directory Id='DesktopFolder' Name='Desktop' />
+		</Directory>
+
+		<Feature Id='Complete' Title='Sift' Description='All components'
+				 Display='expand'  Level='1' ConfigurableDirectory='INSTALLDIR'>
+			<Feature Id='DriverServiceFeature' Title='Driver and Service'
+					 Description='Sift application.' Level='1'>
+				<ComponentRef Id='SiftService' />
+				<ComponentRef Id='SiftDriver' />				
+			</Feature>			
+			<Feature Id='AdministrationFeature' Title='Filter Administration Tool'
+					Description='Used to administer local or remote sift installations. Can be installed in a stand-alone mode' Level='1'>
+				<ComponentRef Id='SiftAdmin' />				
+			</Feature>
+		</Feature>
+
+		<CustomAction Id='InstallDriver' FileKey='SiftDriverInstaller' ExeCommand='/Install /hide' Return='check'/>
+		<CustomAction Id='UninstallDriver' FileKey='SiftDriverInstaller' ExeCommand='/Uninstall /hide' Return='ignore' />
+
+		<Binary Id="wixca" src="C:\sift\utilities\installer\wix\wixca.dll"/>
+		<CustomAction Id='StartService.Command' Property='QtExecCmdLine' Value='"[SystemFolder]net.exe" start Sift' />
+		<CustomAction Id="StartService" BinaryKey="wixca" DllEntry="CAQuietExec" Return="ignore" />
+
+		<InstallExecuteSequence>
+			<Custom Action="UninstallDriver" After='UnpublishComponents'>Installed</Custom>
+			<Custom Action="InstallDriver" After='InstallFinalize'>NOT Installed</Custom>
+			<Custom Action='StartService.Command' After='InstallDriver'>NOT Installed</Custom>
+			<Custom Action='StartService' After='StartService.Command'>NOT Installed</Custom>
+		</InstallExecuteSequence>
+
+		<Condition Message='This setup requires the .NET Framework 2.0 or higher.'>
+			<![CDATA[MsiNetAssemblySupport >= "2.0.50727"]]>
+		</Condition>
+
+		<UIRef Id="WixUI_Mondo" />
+		<UIRef Id="WixUI_ErrorProgressText" />
+
+	</Product>
+</Wix>

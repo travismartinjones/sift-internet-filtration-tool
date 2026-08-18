@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2003/01/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">	
+	<Product Name='Sift' Id='29205068-3930-4ec9-93cc-5ac75f7076fa'
+			 Language='1033' Codepage='1252' Version='0.1.0.0' Manufacturer='Travis Jones'>
+		<Package Id='6e794632-041e-4127-b546-3f454519b598'
+				 Keywords='Installer'
+				 Description='Sift 0.1.0 Installer'
+				 Comments='View the license information for terms of agreement.'
+				 InstallerVersion='200'
+				 Languages='1033'
+				 Compressed='yes'
+				 SummaryCodepage='1252'/>
+
+		<Media Id='1' Cabinet='app.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
+		<Property Id='DiskPrompt' Value="Sift 0.1.0 Installation [1]" />
+
+		<Directory Id='TARGETDIR' Name='SourceDir'>
+			<Directory Id='ProgramFilesFolder' Name='PFiles'>
+				<Directory Id='INSTALLDIR' Name='Sift' >
+					<Directory Id='DRIVERINSTALLDIR' Name='driver' LongName='Driver'>
+						<Component Id='SiftDriver' Guid='0302854e-1c51-41a7-aea2-33a455d5d933'>
+							<File Id='SiftDriverInstaller' Name='siftinst.exe'
+							 DiskId='1' src='C:\sift\driverinstaller\Apps\IMConfig\Release\IMConfig.exe' Vital='yes' />
+							<File Id='SiftDriverSys' Name='sift.sys'
+							 DiskId='1' src='C:\sift\driver\objchk_wxp_x86\i386\sift.sys' Vital='yes' />
+							<File Id='SiftDriverInf' Name='netsf.inf'
+							 DiskId='1' src='C:\sift\driver\netsf.inf' Vital='yes' />
+							<File Id='SiftDriverMInf' Name='netsf_m.inf'
+							 DiskId='1' src='C:\sift\driver\netsf_m.inf' Vital='yes' />
+						</Component>
+					</Directory>
+					<Directory Id='SIFTLISTSDIR' Name='lists' LongName='Lists'>
+						<Component Id='SiftLists' Guid='cab3fe59-0a58-458f-b7f3-302d8f0a2535'>
+							<File Id='AdvertisementURLList' Name='advurl.lis' LongName='64d1a547-2ac1-4590-bc5a-63ea46b64c59.lis'
+							 DiskId='1' Source='C:\sift\lists\64d1a547-2ac1-4590-bc5a-63ea46b64c59.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AdvertisementIPList' Name='advip.lis' LongName='9b9f95ad-35b9-4fcb-a322-22868bd22087.lis'
+							 DiskId='1' Source='C:\sift\lists\9b9f95ad-35b9-4fcb-a322-22868bd22087.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='AdvertisementDomainList' Name='advdom.lis' LongName='20d7ba1e-62d9-41f3-b4b1-dbb791c6855c.lis'
+							 DiskId='1' Source='C:\sift\lists\20d7ba1e-62d9-41f3-b4b1-dbb791c6855c.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='PornographyURLList' Name='pornurl.lis' LongName='29f37e30-e522-4b03-834b-b5be1de468b0.lis'
+							 DiskId='1' Source='C:\sift\lists\29f37e30-e522-4b03-834b-b5be1de468b0.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='PornographyIPList' Name='pornip.lis' LongName='513f2606-9dd2-45f8-924d-88d4d2f39057.lis'
+							 DiskId='1' Source='C:\sift\lists\513f2606-9dd2-45f8-924d-88d4d2f39057.lis'
+							 Compressed='yes' Vital='no' />
+
+							<File Id='PornographyDomainList' Name='porndom.lis' LongName='fe320781-63fe-42e8-be9f-592cf1af7e2c.lis'
+							 DiskId='1' Source='C:\sift\lists\fe320781-63fe-42e8-be9f-592cf1af7e2c.lis'
+							 Compressed='yes' Vital='no' />
+						</Component>
+					</Directory>
+					<Component Id='SiftAdmin' Guid='7d1b22e5-883d-4e56-a713-dd68f537606a'>
+						<File Id='SiftAdminFile' Name='Sift.exe'
+						 DiskId='1' src='C:\sift\application\bin\Release\Sift.exe'
+						 Vital='yes'>
+							<netfx:NativeImage Id="SiftAdminFileNgen" />
+							<Shortcut Id='SiftStartMenuLink' Directory='ProgramMenuDir' Name='Sift'/>
+						</File>
+						<File Id='SiftAdminConfigurationFile' Name='Sift.cfg' LongName='Sift.exe.config' 
+						 DiskId='1' src='C:\sift\application\bin\Release\Sift.exe.config'
+						 Vital='yes' />
+						<File Id='SiftLicenseFile' Name='license.txt'
+						 DiskId='1' src='c:\sift\utilities\installer\license.txt'
+						 Vital='yes' />
+						<Registry Id='SiftInstallDir' Root='HKLM' Key='Software\Sift' Name='InstallDir'
+						 Action='write' Type='string' Value='[INSTALLDIR]' />
+					</Component>
+					<Component Id='SiftService' Guid='5100a221-20e3-47db-89ea-8450a2db9065'
+						SharedDllRefCount='no' KeyPath='no' NeverOverwrite='no' Permanent='no' Transitive='no'
+						Win64='no' Location='either'>
+
+						<File Id='SiftConfigFile' Name='config.xml' LongName='SiftService.exe.config' 
+						 DiskId='1' src='C:\sift\service\bin\Release\SiftService.exe.config'
+						 Vital='yes' />
+
+						<File Id='SiftCommingFile' Name='resource.dll' LongName='Sift.Resources.dll' 
+						 DiskId='1' src='C:\sift\service\bin\Release\Sift.Resources.dll'
+						 Vital='yes' />
+
+						<File Id='SiftServiceFile' Name='SiftSvc.exe' LongName='SiftService.exe' 
+						 DiskId='1' Source='C:\sift\service\bin\Release\SiftService.exe'
+						 ReadOnly='no' Compressed='yes' KeyPath='yes' Vital='yes' Hidden='no' System='no'
+					 Checksum='no'>
+							<netfx:NativeImage Id="SiftServiceFileNgen" />
+						</File>
+
+						<ServiceInstall Id='SiftServiceInstall' DisplayName='Sift' Name='Sift'
+						 ErrorControl='normal' Start='auto' Type='ownProcess' Vital='yes' Interactive='no'>										
+							<ServiceConfig 
+								ServiceName='Sift' 
+								FirstFailureActionType='restart'
+								ResetPeriodInDays='0'
+								RestartServiceDelayInSeconds='60'
+								SecondFailureActionType='restart'
+								ThirdFailureActionType='restart' />							
+							<ServiceDependency Id='winmgmt' />
+						</ServiceInstall>
+
+						<ServiceControl Id='SiftServiceControl' Name='Sift'
+										 Start='install' Stop='uninstall' Remove='uninstall' Wait='no'/>
+												
+					</Component>					
+				</Directory>
+			</Directory>
+
+			<Directory Id='ProgramMenuFolder' Name='PMenu' LongName='Programs'>
+				<Directory Id='ProgramMenuDir' Name='Sift' />
+			</Directory>
+			<Directory Id='DesktopFolder' Name='Desktop' />
+		</Directory>
+
+		<Feature Id='Complete' Title='Sift' Description='All components'
+				 Display='expand'  Level='1' ConfigurableDirectory='INSTALLDIR'>
+			<Feature Id='DriverServiceFeature' Title='Driver and Service'
+					 Description='Sift application.' Level='1'>
+				<ComponentRef Id='SiftService' />
+				<ComponentRef Id='SiftLists' />
+				<ComponentRef Id='SiftDriver' />				
+			</Feature>			
+			<Feature Id='AdministrationFeature' Title='Filter Administration Tool'
+					Description='Used to administer local or remote sift installations. Can be installed in a stand-alone mode' Level='1'>
+				<ComponentRef Id='SiftAdmin' />				
+			</Feature>
+		</Feature>
+
+		<CustomAction Id='InstallDriver' FileKey='SiftDriverInstaller' ExeCommand='/Install /hide' Return='check'/>
+		<CustomAction Id='UninstallDriver' FileKey='SiftDriverInstaller' ExeCommand='/Uninstall /hide' Return='ignore' />
+
+		<Binary Id="wixca" src="C:\sift\utilities\installer\wix\wixca.dll"/>
+		<CustomAction Id='StartService.Command' Property='QtExecCmdLine' Value='"[SystemFolder]net.exe" start Sift' />
+		<CustomAction Id="StartService" BinaryKey="wixca" DllEntry="CAQuietExec" Return="ignore" />
+
+		<InstallExecuteSequence>
+			<Custom Action="UninstallDriver" After='UnpublishComponents'>Installed</Custom>
+			<Custom Action="InstallDriver" After='InstallFinalize'>NOT Installed</Custom>
+			<Custom Action='StartService.Command' After='InstallDriver'>NOT Installed</Custom>
+			<Custom Action='StartService' After='StartService.Command'>NOT Installed</Custom>
+		</InstallExecuteSequence>
+
+		<Condition Message='This setup requires the .NET Framework 2.0 or higher.'>
+			<![CDATA[MsiNetAssemblySupport >= "2.0.50727"]]>
+		</Condition>
+
+		<UIRef Id="WixUI_Mondo" />
+		<UIRef Id="WixUI_ErrorProgressText" />
+
+	</Product>
+</Wix>

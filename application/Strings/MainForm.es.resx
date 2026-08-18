@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ListDeleteConfirmation" xml:space="preserve">
+    <value>Confirme El Retiro</value>
+  </data>
+  <data name="ListDeleteWarning" xml:space="preserve">
+    <value>Quitar el grupo de la lista quita todos los subgrupos y sus listas. ¿Es usted seguro usted desea quitar la lista?</value>
+  </data>
+  <data name="ListDisable" xml:space="preserve">
+    <value>Inhabilite La Lista</value>
+  </data>
+  <data name="ListEnable" xml:space="preserve">
+    <value>Permita La Lista</value>
+  </data>
+  <data name="ListGroupCustom" xml:space="preserve">
+    <value>Costumbre</value>
+  </data>
+  <data name="ListGroupDeleteConfirmation" xml:space="preserve">
+    <value>Confirme El Retiro</value>
+  </data>
+  <data name="ListGroupDeleteWarning" xml:space="preserve">
+    <value>Quitar una lista quita el archivo de lista de su computadora. ¿Es usted seguro usted desea quitar la lista?</value>
+  </data>
+  <data name="ListGroupDisable" xml:space="preserve">
+    <value>Inhabilite A Grupo</value>
+  </data>
+  <data name="ListGroupEnable" xml:space="preserve">
+    <value>Permita A Grupo</value>
+  </data>
+  <data name="ListGroupNew" xml:space="preserve">
+    <value>Nueva Grupo</value>
+  </data>
+  <data name="ListGroupQuickAdd" xml:space="preserve">
+    <value>Aprisa Agregue</value>
+  </data>
+  <data name="ListNew" xml:space="preserve">
+    <value>Nueva Lista</value>
+  </data>
+  <data name="ListTypeDomain" xml:space="preserve">
+    <value>Dominio</value>
+  </data>
+  <data name="ListTypeIP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="ListTypeURL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="NetworkLocalhost" xml:space="preserve">
+    <value>localhost</value>
+  </data>
+  <data name="PasswordMismatch" xml:space="preserve">
+    <value>La contraseña incorporada no empareja la confirmación de la contraseña.</value>
+  </data>
+  <data name="QuickAddInvalid" xml:space="preserve">
+    <value>El texto que usted incorporó no es un URL, un dominio o un IP válido.</value>
+  </data>
+  <data name="RemotingConnectionFailure" xml:space="preserve">
+    <value>Error de las comunicaciones. Compruebe el nombre de anfitrión y los ajustes portuarios e intente otra vez.</value>
+  </data>
+  <data name="RemotingConnectionSuccess" xml:space="preserve">
+    <value>Éxito.</value>
+  </data>
+  <data name="ServiceDisableAction" xml:space="preserve">
+    <value>Inhabilite</value>
+  </data>
+  <data name="ServiceDisabled" xml:space="preserve">
+    <value>Lisiado</value>
+  </data>
+  <data name="ServiceEnableAction" xml:space="preserve">
+    <value>Permita</value>
+  </data>
+  <data name="ServiceEnabled" xml:space="preserve">
+    <value>Permitido</value>
+  </data>
+  <data name="ServiceNotFound" xml:space="preserve">
+    <value>Tamice el servicio no fue encontrado en la computadora especificada. Compruebe su nombre del servicio y ajuste remoting del puerto.</value>
+  </data>
+  <data name="ServiceStartAction" xml:space="preserve">
+    <value>Comienzo</value>
+  </data>
+  <data name="ServiceStarted" xml:space="preserve">
+    <value>Comenzado</value>
+  </data>
+  <data name="ServiceStartedDescription" xml:space="preserve">
+    <value>El servicio del tamizar está funcionando.</value>
+  </data>
+  <data name="ServiceStartingDescription" xml:space="preserve">
+    <value>Tamice el serivce está comenzando...</value>
+  </data>
+  <data name="ServiceStatisticsUnknownCharacter" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="ServiceStopAction" xml:space="preserve">
+    <value>Parada</value>
+  </data>
+  <data name="ServiceStopped" xml:space="preserve">
+    <value>Parado</value>
+  </data>
+  <data name="ServiceStoppedDescription" xml:space="preserve">
+    <value>Se para el servicio del tamizar.</value>
+  </data>
+  <data name="ServiceStoppingDescription" xml:space="preserve">
+    <value>Tamice el serivce está parando...</value>
+  </data>
+</root>

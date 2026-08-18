@@ -1,0 +1,50 @@
+TARGETNAME=sift
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+TARGETLIBS=$(DDK_LIB_PATH)\ndis.lib 
+
+C_DEFINES=$(C_DEFINES) -DNDIS_MINIPORT_DRIVER -DNDIS_WDM=1
+
+
+!if "$(DDK_TARGET_OS)"=="Win2K"
+#
+# The driver is built in the Win2K build environment
+#
+C_DEFINES=$(C_DEFINES) -DNDIS40_MINIPORT=1
+C_DEFINES=$(C_DEFINES) -DNDIS40=1
+!else 
+#
+# The driver is built in the XP or .NET build environment
+# So let us build NDIS 5.1 version.
+#
+
+C_DEFINES=$(C_DEFINES) -DWIN_NT_DRIVER -DWIN32_EXT $(NPF_C_DEFINES)
+C_DEFINES=$(C_DEFINES) -DNDIS51_MINIPORT=1
+C_DEFINES=$(C_DEFINES) -DNDIS51=1
+!endif
+
+
+PRECOMPILED_INCLUDE=precomp.h
+PRECOMPILED_PCH=precomp.pch
+PRECOMPILED_OBJ=precomp.obj
+
+TARGETLIBS=$(DDK_LIB_PATH)\ndis.lib
+
+USE_MAPSYM=1
+
+INCLUDES=..\..\common
+
+# Added hook.c to allow kernel mode packed capture from user mode - TMJones 06.14.05
+# Added linklist.c to handle references to packets
+
+SOURCES=\
+    miniport.c \
+    passthru.c \
+    passthru.rc \
+    protocol.c \
+    hook.c \
+    linklist.c \
+    filter.c \
+    $(NPF_TME_JIT_FILES)
+
+    

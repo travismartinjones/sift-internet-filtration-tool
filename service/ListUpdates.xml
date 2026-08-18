@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<configSections>
+		<section name="ListUpdateSettings" type="Sift.Resources.Settings.ListUpdates, Sift.Resources" />
+	</configSections>
+
+	<ListUpdateSettings>
+		<listUpdates>
+			<listUpdate ListId="777629AE-E569-443D-9307-323157A8EE1A">
+				<listEntryUpdates>
+					<listEntryUpdate Action="Add" Value="www.test.com" DateCreated="01/01/2007"/>
+					<listEntryUpdate Action="Remove" Value="www.testing.com/test" DateCreated="02/01/2007"/>
+				</listEntryUpdates>
+			</listUpdate>
+		</listUpdates>
+	</ListUpdateSettings>
+</configuration>

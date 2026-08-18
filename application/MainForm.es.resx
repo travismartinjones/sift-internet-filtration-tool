@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnEnableDisable.Text" xml:space="preserve">
+    <value>Permitir</value>
+  </data>
+  <data name="groupFilterStatus.Text" xml:space="preserve">
+    <value>Estado del filtro</value>
+  </data>
+  <data name="btnServiceStatisticsRefresh.Text" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblDomainCountDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="lblDomainCountDescription.Text" xml:space="preserve">
+    <value>Dominios</value>
+  </data>
+  <data name="lblBlockingDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="lblBlockingDescription.Text" xml:space="preserve">
+    <value>Bloqueo</value>
+  </data>
+  <data name="lblAllowingDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="lblAllowingDescription.Text" xml:space="preserve">
+    <value>Permitar</value>
+  </data>
+  <data name="tabInformation.Text" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="btnAbout.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="groupServiceStatus.Text" xml:space="preserve">
+    <value>Mantener el estado</value>
+  </data>
+  <data name="tabLists.Text" xml:space="preserve">
+    <value>Listas</value>
+  </data>
+  <data name="txtListNotes.Text" xml:space="preserve">
+    <value>Éstas son algunas notas provechosas sobre ajustes de la lista.</value>
+  </data>
+  <data name="imageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADK
+        CAAAAk1TRnQBSQFMAgEBAgEAAQQBAAEEAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/0IAAfQB8QvwAfEB9AUA
+        A/AB8wXwIgAB9AG8AewMbQG8AgAB7wnsAe8B8CIAAfECUgsqAW0B7AIAAewB8wH7Af8B+wH/AfsB/wL7
+        AewB8CIAAVIBegFSAaAIegFSAaABKgFtAgAB7AHzB/8B+wHsAfAiAAFSAXoBUgGgCHoBUgGgASoBbQIA
+        AewB8wb/AfsB/wHsAfAiAAFSAXoBUgmgAXoBoAEqAW0CAAHsAfMG7AL/AewB8CIAAVIBegFSCaABegGg
+        ASoBbQIAAewI8wH/AewB8CIAAVIBegFSCaABegGgASoBbQIAAewB8wPsBfMB7CMAAVIBegFSCf8BmgH/
+        ASoB7AIAAe8D8wH/BfMB7CMAAVIBoAGaDFIB8QIAAewG8wHvA+wjAAFSBqAF/wEqAewB8QMAAe8G8wHv
+        AewB7yQAAVIB/wSgAf8FUgEqAfEB9AMAAewG8wHvAewmAAFSBP8BUgG8AfQJAALvAewB7wHsAe8B7AHv
+        KAAEUgHxAfR4AAFCAU0BPgcAAT4DAAEoAwABQAMAARADAAEBAQABAQUAAYAXAAP/AQAE/wQAAYABAAH4
+        AQMGAAHAAQMGAAHAAQMGAAHAAQMGAAHAAQMGAAHAAQMGAAHAAQMGAAHAAQcGAAHAAQcGAAHAAQcFAAEB
+        AcABDwUAAQEBwAEfBAABgAF/AcABPwQAAcAD/wQABP8EAAs=
+</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Aprisa Agregar</value>
+  </data>
+  <data name="btnQuickAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 19</value>
+  </data>
+  <data name="btnQuickAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 23</value>
+  </data>
+  <data name="btnQuickAdd.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="lblListStatusDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lblListStatusDescription.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="rbListLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
+  </data>
+  <data name="rbListLog.Text" xml:space="preserve">
+    <value>Registro</value>
+  </data>
+  <data name="rbListBlock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="rbListBlock.Text" xml:space="preserve">
+    <value>Bloque</value>
+  </data>
+  <data name="rbListAllow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 17</value>
+  </data>
+  <data name="rbListAllow.Text" xml:space="preserve">
+    <value>Permitir</value>
+  </data>
+  <data name="lblContentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="lblContentType.Text" xml:space="preserve">
+    <value>Tipo Contento:</value>
+  </data>
+  <data name="btnEditListFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 23</value>
+  </data>
+  <data name="btnEditListFile.Text" xml:space="preserve">
+    <value>Corregir Las Entradas</value>
+  </data>
+  <data name="lblFilterType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="lblFilterType.Text" xml:space="preserve">
+    <value>De Filtro:</value>
+  </data>
+  <data name="lblListFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="lblListFile.Text" xml:space="preserve">
+    <value>Lista:</value>
+  </data>
+  <data name="tabSettings.Text" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="groupAdapterSettings.Text" xml:space="preserve">
+    <value>Ajustes del específico del adaptador</value>
+  </data>
+  <data name="lblAdapter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="lblAdapter.Text" xml:space="preserve">
+    <value>Adaptador:</value>
+  </data>
+  <data name="ddlAdapters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="ddlAdapters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 21</value>
+  </data>
+  <data name="chkOverrideFilterAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 17</value>
+  </data>
+  <data name="chkOverrideFilterAll.Text" xml:space="preserve">
+    <value> Filtrar todos los protocolos del IP </value>
+  </data>
+  <data name="chkOverrideFilterUdp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 17</value>
+  </data>
+  <data name="chkOverrideFilterUdp.Text" xml:space="preserve">
+    <value>Tráfico del UDP del filtro</value>
+  </data>
+  <data name="chkOverrideFilterHttp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 17</value>
+  </data>
+  <data name="chkOverrideFilterHttp.Text" xml:space="preserve">
+    <value>Tráfico del Web page del filtro</value>
+  </data>
+  <data name="chkOverrideFilterTcp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 17</value>
+  </data>
+  <data name="chkOverrideFilterTcp.Text" xml:space="preserve">
+    <value>Tráfico del TCP del filtro</value>
+  </data>
+  <data name="lblAdapterNotes.Text" xml:space="preserve">
+    <value>Fijar los ajustes del filtro del defecto aquí. Para eliminar los ajustes, seleccionar el adaptador que deseas modificar y chascar “ajustes de defecto para requisitos particulares de la invalidación”.</value>
+  </data>
+  <data name="groupDefaultSettings.Text" xml:space="preserve">
+    <value>Ajustes de defecto</value>
+  </data>
+  <data name="chkDefaultFilterHttp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 17</value>
+  </data>
+  <data name="chkDefaultFilterHttp.Text" xml:space="preserve">
+    <value>Tráfico del Web page del filtro</value>
+  </data>
+  <data name="chkDefaultFilterTcp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 17</value>
+  </data>
+  <data name="chkDefaultFilterTcp.Text" xml:space="preserve">
+    <value>Tráfico del TCP del filtro</value>
+  </data>
+  <data name="chkDefaultFilterAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 17</value>
+  </data>
+  <data name="chkDefaultFilterAll.Text" xml:space="preserve">
+    <value> Filtrar todos los protocolos del IP </value>
+  </data>
+  <data name="chkDefaultFilterUdp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 17</value>
+  </data>
+  <data name="chkDefaultFilterUdp.Text" xml:space="preserve">
+    <value>Tráfico del UDP del filtro</value>
+  </data>
+  <data name="tabRemotingSetup.Text" xml:space="preserve">
+    <value>Alejado</value>
+  </data>
+  <data name="groupRemotingConnectAs.Text" xml:space="preserve">
+    <value>Conectar Como</value>
+  </data>
+  <data name="txtRemotingConfirmPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 124</value>
+  </data>
+  <data name="txtRemotingConfirmPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 127</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Confirmar la contraseña:</value>
+  </data>
+  <data name="txtRemotingPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 94</value>
+  </data>
+  <data name="txtRemotingPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="lblRemotingPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 98</value>
+  </data>
+  <data name="lblRemotingPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="lblRemotingPassword.Text" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="txtRemotingUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 65</value>
+  </data>
+  <data name="txtRemotingUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="rbRemotingRemoteUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 66</value>
+  </data>
+  <data name="rbRemotingRemoteUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
+  </data>
+  <data name="rbRemotingRemoteUser.Text" xml:space="preserve">
+    <value>Otro Usuario:</value>
+  </data>
+  <data name="rbRemotingCurrentUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 33</value>
+  </data>
+  <data name="rbRemotingCurrentUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 17</value>
+  </data>
+  <data name="rbRemotingCurrentUser.Text" xml:space="preserve">
+    <value>Usuario entrado actual</value>
+  </data>
+  <data name="lblRemotingSettingsError.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 39</value>
+  </data>
+  <data name="lblRemotingSettingsError.Text" xml:space="preserve">
+    <value>* El servidor remoting no se podía encontrar con los ajustes especificados. 
+Cerciorarte de que el servicio del tamizar esté comenzado en la computadora
+de la blanco e intento otra vez.</value>
+  </data>
+  <data name="groupRemotingConnectTo.Text" xml:space="preserve">
+    <value>Conectar Con</value>
+  </data>
+  <data name="rbRemotingRemoteMachine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 17</value>
+  </data>
+  <data name="rbRemotingRemoteMachine.Text" xml:space="preserve">
+    <value>Otra Computadora:</value>
+  </data>
+  <data name="rbRemotingLocalMachine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="rbRemotingLocalMachine.Text" xml:space="preserve">
+    <value>Esta computadora</value>
+  </data>
+  <data name="lblPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lblPort.Text" xml:space="preserve">
+    <value>Puerto:</value>
+  </data>
+  <data name="btnRemotingTest.Text" xml:space="preserve">
+    <value>Prueba</value>
+  </data>
+  <data name="lblRemotingSettingsNotes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 13</value>
+  </data>
+  <data name="lblRemotingSettingsNotes.Text" xml:space="preserve">
+    <value>Ésta es una cierta información provechosa sobre cómo configurar los ajustes remoting.</value>
+  </data>
+  <data name="systemTrayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICACAAEAAQAwAQAAJgAAACAgAAABACAAqBAAAFYBAAAoAAAAIAAAAEAAAAABAAEAAAAAAIAA
+        AAAAAAAAAAAAAAIAAAACAAAAAAAAAP///wAAAAAAAAAAAAAACIAAQAAAARARAACiBkAB+B+gB/idwAMe
+        OsAHTDjgBx104AOMMcAD///AAf//gAAdOQAADnAAAly6AAAMMIAA//8gC///gAOeu+AHTHDAAyw04AcY
+        MuADvB3AA/gfgABgCwAAAAAAAAAAAAAAAAAAAAAAAAAAAP/////////////3f/+////+7+7//135v/4H
+        4F/4B2I//OHFP/izxx/44osf/HPOP/wAAD/+AAB//+LG///xj//9o0X///PPf/8AAN/0AAB//GFEH/iz
+        jz/808sf+OfNH/xD4j/8B+B//5/0////////////////////////////KAAAACAAAABAAAAAAQAgAAAA
+        AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAACAAAAAwAA
+        AAMAAAADAAAAAgAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAgAAAAMAAAADAAAAAwAA
+        AAIAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAABAAA
+        AAcAAAAJAAAACgAAAAoAAAAHAAAABQAAAAMAAAABAAAAAQAAAAEAAAABAAAAAwAAAAUAAAAHAAAACgAA
+        AAoAAAAJAAAABwAAAAQAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAA
+        AAYAAAALAAAAEgAAABgAAAAaAAAAGQAAABQAAAAOAAAACAAAAAMAAAABAAAAAQAAAAMAAAAIAAAADgAA
+        ABQAAAAZAAAAGgAAABgAAAASAAAACwAAAAYAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA
+        AAIAAAAGAAAADgAAABkAAAAlAAAALQAAADEAAAAvAAAAKAAAAB0AAAARAAAACQAAAAQAAAAEAAAACQAA
+        ABIAAAAdAAAAKAAAAC8AAAAxAAAALQAAACUAAAAZAAAADgAAAAYAAAACAAAAAQAAAAAAAAAAAAAAAAAA
+        AAAAAAABAAAABAAAAAwAAAAZAAAAKgAAADkAAABBAAAAQwAAAEIAAAA8AAAAMAAAAB8AAAAQAAAACAAA
+        AAgAAAAQAAAAHwAAADAAAAA8AAAAQgAAAEMAAABBAAAAOQAAACoAAAAZAAAADAAAAAQAAAABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAIAAAAHAAAAEwAAACYAAAA5BwcHSjIyMok9PT2mNzc3lB4eHmIAAAA+AAAALQAA
+        ABoAAAANAAAADQAAABoAAAAtAAAAPh4eHmI3NzeUPT09pjIyMogJCQlMAAAAOQAAACYAAAATAAAABwAA
+        AAIAAAAAAAAAAAAAAAAAAAABAAAAAwAAAAoAAAAZAAAALycnJ2xISEjjTExM/0xMTP9MTEz/S0tL9zk5
+        OZcAAAA3AAAAIgAAABMAAAATAAAAIgAAADc5OTmYS0tL+ExMTP9MTEz/TExM/0hISOQnJydsAAAALwAA
+        ABkAAAAKAAAAAwAAAAEAAAAAAAAAAAAAAAEAAAADAAAACwAAAB0SEhJASUlJ5kxMTP9LS0v3RkZGv0pK
+        SuZMTEz/TExM/jExMXoAAAArAAAAGwAAABsAAAAqMTExekxMTP5MTEz/SkpK50ZGRr9LS0v3TExM/0lJ
+        SecSEhJAAAAAHQAAAAwAAAADAAAAAQAAAAAAAAAAAAAAAQAAAAMAAAALAAAAHD09PY1MTEz/S0tL8RkZ
+        GU0AAAAwAQEBM0RERMBMTEz/RkZG1gAAADYAAAAnAAAAJwAAADVGRkbWTExM/0RERMEBAQEzAAAAMBkZ
+        GU1LS0vyTExM/z09PY4AAAAcAAAACwAAAAMAAAABAAAAAAAAAAAAAAABAAAAAwAAAAkAAAAXRUVFr0xM
+        TP9BQUG2AAAAQgAAADwAAAA+KCgodUxMTP9LS0v1AAAARQAAADkAAAA5AAAARUtLS/RMTEz/KCgodQAA
+        AD4AAAA8AAAAQkBAQLZMTEz/RUVFrgAAABcAAAAJAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAACAAAABgAA
+        ABBFRUWdTExM/0ZGRs4AAABFAAAARgAAAEsPDw9hTExM/0tLS/wAAABTAAAASgAAAEoAAABTS0tL/ExM
+        TP8PDw9hAAAASwAAAEYAAABFRkZGzkxMTP9FRUWdAAAAEAAAAAYAAAACAAAAAAAAAAAAAAAAAAAAAAAA
+        AAEAAAADAAAACUBAQFdMTEz/TExM/T4+PpsVFRVSAAAASQ8PD2JMTEz/S0tL/AAAAFQAAABLAAAASwAA
+        AFRLS0v8TExM/w8PD2IAAABJFRUVUT4+PpxMTEz9TExM/kBAQFkAAAAJAAAAAwAAAAEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAEAAAAEAAAACklJSalMTEz/TExM/0xMTPtLS0v0S0tL9UxMTP9MTEz/S0tL9UtL
+        S/RLS0v0S0tL9UxMTP9MTEz/S0tL9UtLS/RMTEz6TExM/0xMTP9JSUmpAAAACgAAAAQAAAABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAAECAgICkhISIVLS0vmTExM/0xMTP9MTEz/TExM/0xM
+        TP9MTEz/TExM/0xMTP9MTEz/TExM/0xMTP9MTEz/TExM/0xMTP9LS0vmSEhIhwgICAoAAAAEAAAAAgAA
+        AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAQAAAAIAAAADQAAABQlJSUxJycnSCYm
+        JmFMTEz/TExM/CAgIFglJSVMJSUlTCAgIFhMTEz8TExM/yYmJmEnJydIJSUlMQAAABQAAAANAAAACAAA
+        AAQAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAACAAAABAAAAAZAAAAIQAA
+        ACoAAAA2EhISVUxMTP9LS0v8AAAARgAAADoAAAA6AAAARktLS/xMTEz/EhISVQAAADYAAAAqAAAAIQAA
+        ABkAAAAQAAAACAAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAwAAAAgAAAARAAAAHwAA
+        ACwAAAA2AAAAPgAAAEcPDw9gTExM/0tLS/wAAABSAAAASQAAAEkAAABSS0tL/ExMTP8PDw9gAAAARwAA
+        AD4AAAA2AAAALAAAAB8AAAARAAAACAAAAAMAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAFAAAADgAA
+        AB4AAAAwAAAAPgAAAEQAAABHAAAATA8PD2NMTEz/S0tL/AAAAFUAAABMAAAATAAAAFVLS0v8TExM/w8P
+        D2MAAABMAAAARwAAAEQAAAA+AAAAMAAAAB4AAAAOAAAABQAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAgAA
+        AAgAAAAWAAAAKgAAAD0sLCx4RERExklJSeNJSUnqSUlJ60xMTP9MTEz/SUlJ6kpKSuhKSkrpSUlJ6kxM
+        TP9MTEz/SUlJ60lJSepJSUnjRERExiwsLHkAAAA9AAAAKgAAABYAAAAIAAAAAgAAAAEAAAAAAAAAAAAA
+        AAEAAAADAAAACwAAABsAAAAxOjo6l0xMTPxMTEz/TExM/0xMTP9MTEz/TExM/0xMTP9MTEz/TExM/0xM
+        TP9MTEz/TExM/0xMTP9MTEz/TExM/0xMTP9MTEz/TExM/To6OpkAAAAxAAAAGwAAAAsAAAADAAAAAQAA
+        AAAAAAAAAAAAAQAAAAMAAAAMAAAAHSkpKVtLS0v5TExM/0ZGRsY3NzdzLi4uYC4uLnNMTEz/TExM/C8v
+        L103NzdRNzc3UTAwMF5MTEz8TExM/y4uLnIuLi5gNzc3c0ZGRsVMTEz/S0tL+SkpKVsAAAAdAAAADAAA
+        AAMAAAABAAAAAAAAAAAAAAABAAAAAwAAAAsAAAAaQEBAm0xMTP9ISEjgAAAAPgAAADcAAAA6EhISUkxM
+        TP9MTEz7AAAAJAAAABUAAAAVAAAAJExMTPtMTEz/EhISUQAAADoAAAA3AAAAPkhISOBMTEz/QEBAmwAA
+        ABoAAAALAAAAAwAAAAEAAAAAAAAAAAAAAAEAAAACAAAACAAAABVFRUWxTExM/z8/P7AAAABGAAAARAAA
+        AEUgICBkTExM/0tLS/cAAAAcAAAADwAAAA8AAAAcS0tL+ExMTP8gICBkAAAARQAAAEQAAABGPz8/sExM
+        TP9GRkaxAAAAFQAAAAgAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAFAAAADkVFRYxMTEz/SUlJ5QAA
+        AEMAAABFAAAARD8/P6lMTEz/SkpK1gAAABIAAAAJAAAACQAAABJKSkrWTExM/z8/P6kAAABEAAAARQAA
+        AENJSUnkTExM/0RERI0AAAAOAAAABQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAAHNzc3NEtL
+        S/NMTEz/SEhI2D09PZVFRUW/TExM+UxMTP9FRUWBAAAACgAAAAQAAAAEAAAACkVFRYFMTEz/TExM+UVF
+        Rb89PT2VSEhI10xMTP9LS0vzNzc3NAAAAAcAAAADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA
+        AAMAAAAHRUVFaExMTPVMTEz/TExM/0xMTP9MTEz/SUlJrgAAAAkAAAAEAAAAAgAAAAIAAAAEAAAACUlJ
+        Sa5MTEz/TExM/0xMTP9MTEz/TExM9kVFRWoAAAAHAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAABAAAAAQAAAAMAAAAFQkJCNEpKSppLS0u/SkpKqEdHR2AAAAAGAAAAAwAAAAIAAAABAAAAAQAA
+        AAIAAAADAAAABkdHR2FKSkqoS0tLv0pKSppCQkI1AAAABQAAAAMAAAABAAAAAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAADAAAABAAAAAQAAAAEAAAAAwAAAAIAAAABAAAAAQAA
+        AAAAAAAAAAAAAQAAAAEAAAACAAAAAwAAAAQAAAAEAAAABAAAAAMAAAACAAAAAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnApply.Text" xml:space="preserve">
+    <value>Apliqúese</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Sift Características</value>
+  </data>
+</root>
